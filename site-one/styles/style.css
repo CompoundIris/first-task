@@ -1,0 +1,140 @@
+html{
+    /*background: #158bb8;*/
+}
+
+body {
+    color: black;
+    font-size: 26px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.front{
+    position: relative;
+    background: linear-gradient(to right,cornflowerblue,cadetblue);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.th{
+    font-size: 50px;
+}
+
+.title {
+    color: white;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-family: "华文行楷", cursive, sans-serif;
+    text-shadow: 3px 3px 1px gray;
+}
+
+.jump{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.fp{
+    align-self: flex-end;
+}
+.tp{
+    height: 111px;
+    line-height: 80px;
+}
+.front {
+    position: relative;
+}
+.all{
+    flex-direction: column;
+}
+
+.img,.text{
+    vertical-align: middle;
+}
+
+section .color {
+    /* 绝对定位 */
+    position: absolute;
+    /* 使用filter(滤镜) 属性，给图像设置高斯模糊*/
+    filter: blur(200px);
+}
+
+/* :nth-child(n) 选择器匹配父元素中的第 n 个子元素 */
+
+section .color:nth-child(1) {
+    top: 600px;
+    width: 600px;
+    height: 600px;
+    background: rgba(255, 253, 135, 0.8);
+}
+
+section .color:nth-child(2) {
+    bottom: -1500px;
+    left: 100px;
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 253, 135, 0.8);
+}
+
+section .color:nth-child(3) {
+    bottom: -1200px;
+    right: 100px;
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 253, 135, 0.8);
+}
+
+p[class="left"]{
+    text-align: left;
+    border: solid cornflowerblue;
+    border-left-width: 20px;
+    padding: 5px;
+    align-self: flex-start;
+    box-shadow: 2px 2px 3px rgba(0, 0, 200, 0.4);
+}
+
+p[class="right"]{
+    text-align: right;
+    border: solid cornflowerblue;
+    border-right-width: 20px;
+    padding: 5px;
+    align-self: flex-end;
+    box-shadow: 2px 2px 3px rgba(0, 0, 200, 0.4);
+}
+
+.all{
+    position: relative;
+    display: flex;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 200, 0.4);
+}
+.h1{
+    position: relative;
+}
+
+.object:hover{
+    transition: margin-right 2s;
+    color: #ffffff;
+}
+.object{
+    background: cornflowerblue;
+    border-radius: 3px;
+    width: 5em;
+}
+
+span[class*="text"]{
+    line-height: 62px;
+}
+
+.bottom{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.bp{
+    align-self: center;
+}
